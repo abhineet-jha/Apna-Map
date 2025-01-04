@@ -1,0 +1,170 @@
+/* General Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f9f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #eff7f1;
+    padding: 0;
+    text-align: left;
+    height: 55px;
+}
+
+.custom-logo {
+    float: left;
+    margin-right: 0;
+}
+
+/* Container */
+.container {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Search Section */
+.search-section {
+    background-image: url(image/imgbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(121, 107, 107, 0.7);
+    border-radius: 5px;
+    padding: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.h-top {
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+    filter: drop-shadow(4px 4px 2px #00000040);
+}
+
+.under_h-top_points {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.under_h-top_points li {
+    margin-bottom: 0.5em;
+}
+
+.search-section h2 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    color: #f3f5f7;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0.5em;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-bar button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #005bb5;
+}
+
+/* Top Places Section */
+.h2-top {
+    text-align: center;
+}
+
+.top-places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+}
+
+.place-card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+}
+
+.place-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.place-card h3 {
+    font-size: 1.2em;
+    margin: 0.8em 0;
+    color: #0078d4;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-places {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+  
+}
